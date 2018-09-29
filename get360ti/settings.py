@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'model360ti'
+    'model360ti',
+    'people'
 ]
 
 MIDDLEWARE = [

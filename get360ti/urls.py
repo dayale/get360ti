@@ -14,14 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from . import view
-from . import search
-from get360ti import tableDBDao
+from get360ti import view
+
 
 urlpatterns = [
-    url(r'^hahah',view.hello),
-    url(r'testdb', view.hello),
-    url(r'commitips',view.commitips),
-    url(r'^search$', search.search),
-    url(r'^search-form$', search.search_form),
+    url(r'^commitips/$',view.commitPerson),
+    url(r'^updateips/$',view.updateips),
+    url(r'^getallips/$',view.getAllIps),
 ]
