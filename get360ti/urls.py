@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from get360ti import view
-
+from get360ti import api
 
 urlpatterns = [
     url(r'^commitips/$',view.commitPerson),
     url(r'^updateips/$',view.updateips),
     url(r'^getallips/$',view.getAllIps),
+    url(r'^apigetallips/$',api.getAllIps),
+    url(r'^apiupdateipinfo/$',api.updateIpInfo),
 ]
